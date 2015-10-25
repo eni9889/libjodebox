@@ -1,9 +1,11 @@
 Package: com.unlimapps.jodeboxlib
 Name: libjodebox
-Version: 1.0r-4
+Version: 1.0r-5
 Description: Developer library for easy access to JODebox import functions source at https://github.com/eni9889/libjodebox
 Section: System
 Depends: firmware (>= 7.0), com.ouraigua.jodebox, com.rpetrich.rocketbootstrap
 Priority: optional
 Architecture: iphoneos-arm
-Author: Enea Gjoka
+Author: UnlimApps Inc <support@unlimapps.com>
+Maintainer: BigBoss <bigboss@thebigboss.org>
+dev: i4iphones
