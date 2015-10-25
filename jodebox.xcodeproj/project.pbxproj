@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47141B951BDC8B98009E229A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141B941BDC8B98009E229A /* Foundation.framework */; };
+		47141B971BDC8B98009E229A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141B961BDC8B98009E229A /* UIKit.framework */; };
+		47141BA31BDC8B98009E229A /* jodebox.m in Sources */ = {isa = PBXBuildFile; fileRef = 47141BA21BDC8B98009E229A /* jodebox.m */; };
+		47141BD31BDC99EC009E229A /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141BD21BDC99EC009E229A /* AppSupport.framework */; };
+		47141BD51BDC9D95009E229A /* librocketbootstrap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141BD41BDC9D95009E229A /* librocketbootstrap.dylib */; };
+		47141BD71BDC9FDE009E229A /* jodebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 47141BD61BDC9FDE009E229A /* jodebox.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47141B911BDC8B98009E229A /* libjodebox.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libjodebox.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		47141B941BDC8B98009E229A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47141B961BDC8B98009E229A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47141B9E1BDC8B98009E229A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		47141B9F1BDC8B98009E229A /* jodebox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jodebox-Prefix.pch"; sourceTree = "<group>"; };
+		47141BA21BDC8B98009E229A /* jodebox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jodebox.m; sourceTree = "<group>"; };
+		47141BD21BDC99EC009E229A /* AppSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks/AppSupport.framework; sourceTree = DEVELOPER_DIR; };
+		47141BD41BDC9D95009E229A /* librocketbootstrap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librocketbootstrap.dylib; path = ../iOSOpenDev/lib/librocketbootstrap.dylib; sourceTree = "<group>"; };
+		47141BD61BDC9FDE009E229A /* jodebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jodebox.h; path = Package/usr/include/jodebox.h; sourceTree = "<group>"; };
+		47141BD81BDCA1D8009E229A /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Package; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47141B8D1BDC8B98009E229A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47141BD51BDC9D95009E229A /* librocketbootstrap.dylib in Frameworks */,
+				47141BD31BDC99EC009E229A /* AppSupport.framework in Frameworks */,
+				47141B951BDC8B98009E229A /* Foundation.framework in Frameworks */,
+				47141B971BDC8B98009E229A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47141B871BDC8B98009E229A = {
+			isa = PBXGroup;
+			children = (
+				47141B981BDC8B98009E229A /* jodebox */,
+				47141B931BDC8B98009E229A /* Frameworks */,
+				47141B921BDC8B98009E229A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47141B921BDC8B98009E229A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47141B911BDC8B98009E229A /* libjodebox.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47141B931BDC8B98009E229A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47141BD41BDC9D95009E229A /* librocketbootstrap.dylib */,
+				47141BD21BDC99EC009E229A /* AppSupport.framework */,
+				47141B941BDC8B98009E229A /* Foundation.framework */,
+				47141B961BDC8B98009E229A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47141B981BDC8B98009E229A /* jodebox */ = {
+			isa = PBXGroup;
+			children = (
+				47141BD61BDC9FDE009E229A /* jodebox.h */,
+				47141BA21BDC8B98009E229A /* jodebox.m */,
+				47141BD81BDCA1D8009E229A /* Package */,
+				47141B9D1BDC8B98009E229A /* Supporting Files */,
+			);
+			path = jodebox;
+			sourceTree = "<group>";
+		};
+		47141B9D1BDC8B98009E229A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47141B9E1BDC8B98009E229A /* PackageVersion.plist */,
+				47141B9F1BDC8B98009E229A /* jodebox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47141B8E1BDC8B98009E229A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47141BD71BDC9FDE009E229A /* jodebox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47141B901BDC8B98009E229A /* jodebox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47141BA91BDC8B98009E229A /* Build configuration list for PBXNativeTarget "jodebox" */;
+			buildPhases = (
+				47141B8C1BDC8B98009E229A /* Sources */,
+				47141B8D1BDC8B98009E229A /* Frameworks */,
+				47141B8E1BDC8B98009E229A /* Headers */,
+				47141B8F1BDC8B98009E229A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jodebox;
+			productName = jodebox;
+			productReference = 47141B911BDC8B98009E229A /* libjodebox.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47141B881BDC8B98009E229A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				TargetAttributes = {
+					47141B901BDC8B98009E229A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 47141B8B1BDC8B98009E229A /* Build configuration list for PBXProject "jodebox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47141B871BDC8B98009E229A;
+			productRefGroup = 47141B921BDC8B98009E229A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47141B901BDC8B98009E229A /* jodebox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47141B8F1BDC8B98009E229A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp\n\n\nDYLIB_DIR=\"$BUILT_PRODUCTS_DIR/lib$TARGET_NAME.dylib\"\ncd \"$PROJECT_DIR/Packages\"\nL_FILE_NAME=$(ls -t *.deb | head -1)\nL_PKG_LOCATION=\"$PROJECT_DIR/Packages/$L_FILE_NAME\"\n\nif [ \"$CONFIGURATION\" == \"Release\" ]; then\necho \"RELEASE IS ON!\"\nrsync -a -I --include '*.h' --exclude '*' \"${SRCROOT}/jodebox/Package/usr/include/\"  \"/opt/iOSOpenDev/include/\"\necho \"Running Command: cp -rf '$DYLIB_DIR' /opt/iOSOpenDev/lib/\"\ncp -rf \"$DYLIB_DIR\" \"/opt/iOSOpenDev/lib/\"\nfi\n\nif [ \"$CONFIGURATION\" == \"ReleaseRepo\" ]; then\necho \"RELEASE REPO IS ON!\"\nrsync -a -I --include '*.h' --exclude '*' \"${SRCROOT}/jodebox/Package/usr/include/\"  \"/opt/iOSOpenDev/include/\"\necho \"Running Command: cp -rf '$DYLIB_DIR' /opt/iOSOpenDev/lib/\"\ncp -rf \"$DYLIB_DIR\" \"/opt/iOSOpenDev/lib/\"\n/usr/local/bin/add_package_to_ua_beta \"$L_PKG_LOCATION\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47141B8C1BDC8B98009E229A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47141BA31BDC8B98009E229A /* jodebox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47141BA71BDC8B98009E229A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		47141BA81BDC8B98009E229A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		47141BAA1BDC8B98009E229A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jodebox/jodebox-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/include;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		47141BAB1BDC8B98009E229A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jodebox/jodebox-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/include;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		47141BDB1BDCAD5F009E229A /* ReleaseRepo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = ReleaseRepo;
+		};
+		47141BDC1BDCAD5F009E229A /* ReleaseRepo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jodebox/jodebox-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/include;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = ReleaseRepo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47141B8B1BDC8B98009E229A /* Build configuration list for PBXProject "jodebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47141BA71BDC8B98009E229A /* Debug */,
+				47141BA81BDC8B98009E229A /* Release */,
+				47141BDB1BDCAD5F009E229A /* ReleaseRepo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47141BA91BDC8B98009E229A /* Build configuration list for PBXNativeTarget "jodebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47141BAA1BDC8B98009E229A /* Debug */,
+				47141BAB1BDC8B98009E229A /* Release */,
+				47141BDC1BDCAD5F009E229A /* ReleaseRepo */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47141B881BDC8B98009E229A /* Project object */;
+}
