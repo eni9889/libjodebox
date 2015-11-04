@@ -20,6 +20,8 @@
 @implementation JODebox
 
 +(NSDictionary *)importMediaType:(MediaType)type withUserInfo:(NSDictionary *)info {
+    CCLOGWARN(@"=: %@", info);
+    
     NSMutableDictionary *mediaInfo = [@{} mutableCopy];
     mediaInfo[@"isNotOpenIn"] = @(1);
     
@@ -68,6 +70,15 @@
         metadata[@"trackNumber"] = trackNumber;
     }
     
+    if (year) {
+        metadata[@"year"] = year;
+    } else {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSInteger yearFromDate = [calendar component:NSCalendarUnitYear fromDate:date];
+        metadata[@"year"] = @(yearFromDate);
+    }
+    
     if (artist) {
         metadata[@"artist"] = artist;
     } else {
@@ -104,6 +115,15 @@
         metadata[@"artist"] = [[[NSBundle mainBundle] executablePath] lastPathComponent];
     }
     
+    if (year) {
+        metadata[@"year"] = year;
+    } else {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSInteger yearFromDate = [calendar component:NSCalendarUnitYear fromDate:date];
+        metadata[@"year"] = @(yearFromDate);
+    }
+    
     if (genre) {
         metadata[@"type"] = genre;
     } else {
@@ -116,6 +136,7 @@
     
     NSDictionary *info = @{ @"metadata" : metadata,
                             @"path" : path };
+    
     return [self importMediaType:kMusicVideo withUserInfo:info];
 }
 
@@ -133,6 +154,15 @@
         metadata[@"artist"] = artist;
     } else {
         metadata[@"artist"] = [[[NSBundle mainBundle] executablePath] lastPathComponent];
+    }
+    
+    if (year) {
+        metadata[@"year"] = year;
+    } else {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSInteger yearFromDate = [calendar component:NSCalendarUnitYear fromDate:date];
+        metadata[@"year"] = @(yearFromDate);
     }
     
     if (genre) {
@@ -174,6 +204,11 @@
     
     if (year) {
         metadata[@"year"] = year;
+    } else {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSInteger yearFromDate = [calendar component:NSCalendarUnitYear fromDate:date];
+        metadata[@"year"] = @(yearFromDate);
     }
     
     if (genre) {
