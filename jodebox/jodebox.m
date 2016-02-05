@@ -38,6 +38,10 @@
             mediaInfo[@"mediaKind"] = @"tv-episode";
             break;
         }
+        case kPodcast: {
+            mediaInfo[@"mediaKind"] = @"podcast";
+            break;
+        }
         default: {
             mediaInfo[@"mediaKind"] = @"song";
             break;
@@ -141,10 +145,10 @@
 }
 
 +(NSDictionary *)importMovieWithTitle:(NSString *)title artist:(NSString *)artist image:(UIImage *)image
-                                  duration:(NSNumber *)duration year:(NSNumber *)year path:(NSString *)path genre:(NSString *)genre {
+                             duration:(NSNumber *)duration year:(NSNumber *)year path:(NSString *)path genre:(NSString *)genre {
     NSMutableDictionary *metadata = [@{
-                                        @"title"     : title,
-                                        @"software"  : @"Lavf53.24.2" } mutableCopy];
+                                       @"title"     : title,
+                                       @"software"  : @"Lavf53.24.2" } mutableCopy];
     
     if (duration) {
         metadata[@"duration"] = duration;
@@ -186,11 +190,11 @@
                              seasonNumber:(NSNumber *)seasonNumber episodeNumber:(NSNumber *)episodeNumber
                                      path:(NSString *)path genre:(NSString *)genre {
     NSMutableDictionary *metadata = [@{
-                                        @"title"            : title,
-                                        @"software"         : @"Lavf53.24.2",
-                                        @"episodeNumber"    : episodeNumber,
-                                        @"seasonNumber"     : seasonNumber,
-                                        @"seriesName"       : seriesName } mutableCopy];
+                                       @"title"            : title,
+                                       @"software"         : @"Lavf53.24.2",
+                                       @"episodeNumber"    : episodeNumber,
+                                       @"seasonNumber"     : seasonNumber,
+                                       @"seriesName"       : seriesName } mutableCopy];
     
     if (duration) {
         metadata[@"duration"] = duration;
@@ -226,5 +230,48 @@
     return [self importMediaType:kTVEpisode withUserInfo:info];
     
 }
+
++(NSDictionary *)importPodcastWithTitle:(NSString *)title
+                            podcastName:(NSString *)name
+                          episodeNumber:(NSNumber *)episodeNumber
+                                   year:(NSNumber *)year
+                                  image:(UIImage *)image
+                                   path:(NSString *)path
+                                  genre:(NSString *)genre {
+    
+    NSMutableDictionary *metadata = [@{
+                                       @"title"            : title,
+                                       @"software"         : @"Lavf53.24.2",
+                                       @"episodeNumber"    : episodeNumber } mutableCopy];
+    
+    if (name) {
+        metadata[@"podcastName"] = name;
+    }
+    
+    if (year) {
+        metadata[@"year"] = year;
+    } else {
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDate *date = [NSDate date];
+        NSInteger yearFromDate = [calendar component:NSCalendarUnitYear fromDate:date];
+        metadata[@"year"] = @(yearFromDate);
+    }
+    
+    if (genre) {
+        metadata[@"type"] = genre;
+    } else {
+        metadata[@"type"] = @"Podcast";
+    }
+    
+    if (image) {
+        metadata[@"imageData"] = UIImagePNGRepresentation(image);
+    }
+    
+    NSDictionary *info = @{ @"metadata" : metadata,
+                            @"path" : path };
+    return [self importMediaType:kPodcast withUserInfo:info];
+    
+}
+
 
 @end

@@ -42,4 +42,8 @@ typedef enum {
                                      year:(NSNumber *)year seriesName:(NSString *)seriesName
                              seasonNumber:(NSNumber *)seasonNumber episodeNumber:(NSNumber *)episodeNumber
                                      path:(NSString *)path genre:(NSString *)genre;
+
++(NSDictionary *)importPodcastWithTitle:(NSString *)title podcastName:(NSString *)name
+                          episodeNumber:(NSNumber *)episodeNumber year:(NSNumber *)year image:(UIImage *)image
+                                   path:(NSString *)path genre:(NSString *)genre;
 @end
