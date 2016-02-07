@@ -1,6 +1,6 @@
 Package: com.unlimapps.uamediaexporthelper
 Name: uamediaexporthelper
-Version: 1.0r-10
+Version: 1.0r-11
 Description: Developer library for easy access to JODebox import functions source at https://github.com/eni9889/libjodebox
 Section: System
 Depends: firmware (>= 7.0), com.ouraigua.jodebox, com.rpetrich.rocketbootstrap
