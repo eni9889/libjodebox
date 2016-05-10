@@ -10,7 +10,6 @@
 		47141B951BDC8B98009E229A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141B941BDC8B98009E229A /* Foundation.framework */; };
 		47141B971BDC8B98009E229A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141B961BDC8B98009E229A /* UIKit.framework */; };
 		47141BA31BDC8B98009E229A /* jodebox.m in Sources */ = {isa = PBXBuildFile; fileRef = 47141BA21BDC8B98009E229A /* jodebox.m */; };
-		47141BD31BDC99EC009E229A /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141BD21BDC99EC009E229A /* AppSupport.framework */; };
 		47141BD51BDC9D95009E229A /* librocketbootstrap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47141BD41BDC9D95009E229A /* librocketbootstrap.dylib */; };
 		47141BD71BDC9FDE009E229A /* jodebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 47141BD61BDC9FDE009E229A /* jodebox.h */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47141BD51BDC9D95009E229A /* librocketbootstrap.dylib in Frameworks */,
-				47141BD31BDC99EC009E229A /* AppSupport.framework in Frameworks */,
 				47141B951BDC8B98009E229A /* Foundation.framework in Frameworks */,
 				47141B971BDC8B98009E229A /* UIKit.framework in Frameworks */,
 			);
