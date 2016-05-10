@@ -53,7 +53,7 @@
     CPDistributedMessagingCenter *c = [NSClassFromString(@"CPDistributedMessagingCenter") centerNamed:@"com.ouraigua.jodebox.center"];
     rocketbootstrap_distributedmessagingcenter_apply(c);
     
-    return [c sendMessageAndReceiveReplyName:@"messageThatHasInfo" userInfo:mediaInfo];
+    return [c sendMessageAndReceiveReplyName:@"com.ouraigua.jodebox.message" userInfo:@{@"com.ouraigua.jodebox.importer":@[mediaInfo]}];
 }
 
 +(NSDictionary *)importSongWithTitle:(NSString *)title artist:(NSString *)artist image:(UIImage *)image
